@@ -10,6 +10,6 @@ class BalanceController extends Controller
 {
     public function index(BalanceRequest $balanceRequest)
     {
-        return abort(404);
+        return response()->json(['message' => 'non-existing account'], 404);
     }
 }
