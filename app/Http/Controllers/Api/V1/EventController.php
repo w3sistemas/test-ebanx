@@ -12,11 +12,9 @@ class EventController extends Controller
     public function store(EventRequest $eventRequest): JsonResponse
     {
         return response()->json([
-            [
-                "destination" => [
-                    "id" => "100",
-                    "balance" => 10
-                ]
+            "destination" => [
+                "id" => "100",
+                "balance" => 10
             ]
         ], 201);
     }
